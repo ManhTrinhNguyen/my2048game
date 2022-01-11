@@ -11,7 +11,7 @@ let score = 0;
 function generateNumber (){
   let randomNumber = Math.floor(Math.random() * cells.length)
   if (cells[randomNumber == 0]) {
-  cells[randomNumber].innerHTML = 2;
+  cells[randomNumber].innerHTML == 2;
   }
 
 }
@@ -30,7 +30,7 @@ function generateNumber (){
      let filterdRow = row.filter(rows => rows )
     //console.log(filterdRow)
     let missing = 4 - filterdRow.length
-    let zeros = Array(missing).fill(0)
+    let zeros = Array(missing).fill("")
     //console.log(zeros)
     let newRow = zeros.concat(filterdRow)
     //console.log(newRow)
@@ -55,7 +55,7 @@ console.log(row)
       //console.log(filterdRow)
       let missing = 4 - filterdRow.length
       //console.log(missing)
-      let zeros = Array(missing).fill(0)
+      let zeros = Array(missing).fill("")
       //console.log(zeros)
       let newRow = filterdRow.concat(zeros)
      //console.log(newRow)
@@ -80,7 +80,7 @@ function moveDown() {
    //console.log(filteredColumn)
     let missing = 4 - filteredColumn.length
     //console.log(missing)
-    let zeros = Array(missing).fill(0)
+    let zeros = Array(missing).fill("")
     //console.log(zeros)
     let newColumn = zeros.concat(filteredColumn)
     //console.log(zeros)
@@ -102,7 +102,7 @@ function moveUp() {
     let column = [parseInt(totalOne), parseInt(totalTwo), parseInt(totalThree), parseInt(totalFour)]
     let filteredColumn = column.filter(column => column)
     let missing = 4 - filteredColumn.length
-    let zeros = Array(missing).fill(0)
+    let zeros = Array(missing).fill("")
     let newColumn = filteredColumn.concat(zeros)
     cells[i].innerHTML = newColumn[0]
     cells[i+width].innerHTML = newColumn[1]
