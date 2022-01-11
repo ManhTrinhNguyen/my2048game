@@ -10,8 +10,9 @@ let score = 0;
 // generate Number
 function generateNumber (){
   let randomNumber = Math.floor(Math.random() * cells.length)
-  //console.log(randomNumber)
+  if (cells[randomNumber == 0]) {
   cells[randomNumber].innerHTML = 2;
+  }
 
 }
   generateNumber();
